@@ -1,5 +1,5 @@
 from hashver.hashver import (
-    HashVer, HashVerException, HashVerTests
+    HashVer, HashVerException
 )
 
 __all__ = [
