@@ -5,7 +5,7 @@ with open("README.md", "r") as fh:
 
 setuptools.setup(
     name="hashver",
-    version="0.0.1",
+    version="0.0.2",
     author="Ashutosh Kumar",
     author_email="ashutoshk.akumar@gmail.com",
     description=(

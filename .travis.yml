@@ -15,3 +15,7 @@ deploy:
   provider: pypi
   user: $PYPIUSER
   password: $PYPIPASS
+  skip_existing: true
+  on:
+    tags: true
+  
