@@ -1,4 +1,4 @@
-from hashver.hashver import (
+from .hashver import (
     HashVer, HashVerException
 )
 

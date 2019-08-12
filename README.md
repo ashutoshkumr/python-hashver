@@ -1,4 +1,4 @@
-hashver
+hashver ![Build Status](https://travis-ci.org/ashutoshkumr/python-hashver.svg?branch=master)
 =======
 
 Is a python module to derive a unique numeric value from a version string and vice versa, adhering to following constraints:
