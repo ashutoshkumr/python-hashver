@@ -28,7 +28,7 @@ After performing **python -m pip install hashver**, execute python code as menti
 
 Or if you have curl,
 ```bash
-$ curl -skL https://raw.githubusercontent.com/ashutoshkumr/python-hashver/master/hashver/hashver.py | python - 1.0.6 8590000133
+curl -skL https://raw.githubusercontent.com/ashutoshkumr/python-hashver/master/hashver/hashver.py | python - 1.0.6 8590000133
 
 1.0.6 : 4294967302
 8590000133 : 2.1.5
@@ -38,12 +38,12 @@ $ curl -skL https://raw.githubusercontent.com/ashutoshkumr/python-hashver/master
 
 If any modification is done to hashver source, use following to validate changes,
 ```bash
-$ # ensure various combinations of version string or number can be derived from each other
-$ python -B ${hashver-root}/hashver.py 9.0.100.10 2533274796949514 --bpc 16.16.16.16
+# ensure various combinations of version string or number can be derived from each other
+python -B ${hashver-root}/hashver.py 9.0.100.10 2533274796949514 --bpc 16.16.16.16
 9.0.100.10 : 2533274796949514
 2533274796949514: 9.0.100.10
-$ # or simply add them to the existing test suite and run all of them
-$ python -B ${hashver-root}/hashver.py test
+# or simply add them to the existing test suite and run all of them
+python -B ${hashver-root}/hashver.py test
 .
 .
 Passed: 54, Failed: 0
