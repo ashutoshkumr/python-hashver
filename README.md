@@ -40,11 +40,10 @@ If any modification is done to hashver source, use following to validate changes
 ```bash
 # ensure various combinations of version string or number can be derived from each other
 python -B ${hashver-root}/hashver.py 9.0.100.10 2533274796949514 --bpc 16.16.16.16
+
 9.0.100.10 : 2533274796949514
 2533274796949514: 9.0.100.10
-# or simply add them to the existing test suite and run all of them
-python -B ${hashver-root}/hashver.py test
-.
-.
-Passed: 54, Failed: 0
+
+# or simply add them to the existing test suite in hashver/test_hashver.py and run pytest
+cd ${hashver-root} && pytest
 ```
